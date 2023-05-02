@@ -1,0 +1,32 @@
+{
+  "hash": "57df0dcb",
+  "browserHash": "db212a8a",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "c347bcf2",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "b2517aab",
+      "needsInterop": true
+    },
+    "primereact/inputtextarea": {
+      "src": "../../node_modules/primereact/inputtextarea/inputtextarea.esm.js",
+      "file": "primereact_inputtextarea.js",
+      "fileHash": "d9629da6",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-SRAQOA3L": {
+      "file": "chunk-SRAQOA3L.js"
+    },
+    "chunk-QSQYAWSL": {
+      "file": "chunk-QSQYAWSL.js"
+    }
+  }
+}

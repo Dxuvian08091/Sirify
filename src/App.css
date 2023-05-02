@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+
+.selectable {
+  -webkit-user-select: text; /* Safari */
+  -moz-user-select: text; /* Firefox */
+  -ms-user-select: text; /* IE 10 and IE 11 */
+  user-select: text; /* Standard syntax */
+}

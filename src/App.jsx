@@ -1,12 +1,12 @@
-import React, { useState} from 'react'
+import React, { useState } from "react";
 import { InputTextarea } from "primereact/inputtextarea";
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [content, setContent] = useState("")
-  const clearBtnHandler =()=>{
+  const [content, setContent] = useState("");
+  const clearBtnHandler = () => {
     setContent("");
-  }
+  };
 
   return (
     <>
@@ -25,23 +25,25 @@ function App() {
         cols="30"
       />
       <br />
-      {content.split(" ").map((word, index) => {
-        let bold = "";
-        let normal = "";
-        if (word.length > 8) {
-          bold = word.slice(0, 3);
-          normal = word.slice(3);
-        } else {
-          bold = word.slice(0, 2);
-          normal = word.slice(2);
-        }
-        return (
-          <React.Fragment key={index}>
-            <b>{bold}</b>
-            {normal}{" "}
-          </React.Fragment>
-        );
-      })}
+      <div className="">
+        {content.split(" ").map((word, index) => {
+          let bold = "";
+          let normal = "";
+          if (word.length > 8) {
+            bold = word.slice(0, 3);
+            normal = word.slice(3);
+          } else {
+            bold = word.slice(0, 2);
+            normal = word.slice(2);
+          }
+          return (
+            <React.Fragment key={index}>
+              <b>{bold}</b>
+              {normal}{" "}
+            </React.Fragment>
+          );
+        })}
+      </div>
       <br />
       <br />
       <button onClick={clearBtnHandler}>Clear</button>
